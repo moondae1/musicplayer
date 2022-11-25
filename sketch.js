@@ -32,7 +32,7 @@ var button;
 
 function setup(){
     createCanvas(200, 200);
-    song = loadSound(music.mp3', loaded);
+    song = loadSound('music.mp3', loaded);
     button = createButton('play');
     button.mousePressed(togglePlaying);
     background(51);
