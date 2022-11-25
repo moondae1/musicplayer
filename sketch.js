@@ -13,7 +13,7 @@ function setup()
 {
     createCanvas(640, 480);
     soundFormats('mp3','ogg');
-    song = loadSound('music',loadMusic);
+    song = loadSound('music', loadMusic);
     // musicFile.play();
     button = createButton("play");
     button.mousePressed(togglePlaying);
