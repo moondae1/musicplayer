@@ -7,14 +7,14 @@
 // }
 
 
-// let musicFile;
-// function setup()
-// {
-//     soundFormats('mp3','ogg');
-//     musicFile = loadSound('music',loaadMusic);
-//     // musicFile.play();
+let musicFile;
+function setup()
+{
+    soundFormats('mp3','ogg');
+    musicFile = loadSound('music',loaadMusic);
+    // musicFile.play();
 
-// }
+}
 
 
 // function loadMusic()
