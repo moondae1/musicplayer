@@ -22,7 +22,7 @@ function setup()
 function togglePlaying(){
     if(!song.isPlaying()){
         song.play();
-        button.html('pouse');
+        button.html('pause');
     }else{
         song.stop();
         button.html('play');
