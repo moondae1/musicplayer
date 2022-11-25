@@ -7,18 +7,18 @@
 // }
 
 
-let musicFile;
+let song;
 function setup()
 {
     soundFormats('mp3','ogg');
-    musicFile = loadSound('music',loaadMusic);
+    song = loadSound('music',loaadMusic);
     // musicFile.play();
 }
 
 
 function loadMusic()
 {
-    musicFile.play();
+    song.play();
 }
 
 
