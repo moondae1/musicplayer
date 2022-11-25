@@ -17,18 +17,18 @@ function setup()
 }
 
 
-// function loadMusic()
-// {
-//     musicFile.play();
-// }
+function loadMusic()
+{
+    musicFile.play();
+}
 
-// function draw(){
+function draw(){
 
-//     fill(255.0.0);
-//     ellipse(50,50,100,100);
+    fill(255.0.0);
+    ellipse(50,50,100,100);
 
 
-// }
+}
 
 var song;
 var button;
