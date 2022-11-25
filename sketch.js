@@ -7,25 +7,48 @@
 // }
 
 
-let musicFile;
-function setup()
-{
-    soundFormats('mp3','ogg');
-    musicFile = loadSound('music',loaadMusic);
-    // musicFile.play();
+// let musicFile;
+// function setup()
+// {
+//     soundFormats('mp3','ogg');
+//     musicFile = loadSound('music',loaadMusic);
+//     // musicFile.play();
 
+// }
+
+
+// function loadMusic()
+// {
+//     musicFile.play();
+// }
+
+// function draw(){
+
+//     fill(255.0.0);
+//     ellipse(50,50,100,100);
+
+
+// }
+
+var song;
+var button;
+
+function setup(){
+    createCanvas(200, 200);
+    song = loadSound(music.mp3', loaded);
+    button = createButton('play');
+    button.mousePressed(togglePlaying);
+    background(51);
 }
 
-
-function loadMusic()
-{
-    musicFile.play();
+function togglePlaying(){
+    if(!song.isPlaying()){
+        song.play();
+        song.setVolume(0.3);
+        button.html('play');
+    }
 }
 
-function draw(){
-
-    fill(255.0.0);
-    ellipse(50,50,100,100);
-
-
+function loaded(){
+    console.log('loaded');
 }
